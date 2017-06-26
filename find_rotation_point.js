@@ -142,26 +142,7 @@ So whenever you know an array is sorted or almost sorted, think about these less
 
 
 
-function findRotationPoint (arr) {
-  var firstWord = arr[0];
-  var floor = 0;
-  var ceiling = arr.length - 1;
 
-  while (floor < ceiling) {
-    var distance = ceiling - floor;
-    var halfDistance = Math.floor(distance / 2);
-    var guessIndex = floor + halfDistance;
-    var guess = arr[guessIndex];
-
-    if (guess > firstWord) {
-      floor = guessIndex;
-    } else {
-      ceiling = guessIndex;
-    }
-    if (floor + 1 === ceiling) break;
-  }
-  return ceiling;
-}
 
   var words = [
     'karpatka',
