@@ -157,6 +157,6 @@ So whenever you know an array is sorted or almost sorted, think about these less
     'banoffee',
     'engender',
 ];
-// answer: 7;
+// answer: asymptote at index 7;
 
 console.log(findRotationPoint(words));
